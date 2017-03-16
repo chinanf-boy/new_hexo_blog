@@ -1,7 +1,9 @@
 ---
 title: webpack+less+Autoprefixer
 date: 2017-03-15 11:56:59
-tags: webpack less Autoprefixer postCss
+tags: [webpack, less ,Autoprefixer ,postCss]
+banner: https://s3.amazonaws.com/codementor_content/2016-Sept/webpack.jpg
+thumbnail: https://s3.amazonaws.com/codementor_content/2016-Sept/webpack.jpg
 ---
 
 # webpack
@@ -16,9 +18,11 @@ tags: webpack less Autoprefixer postCss
 
 > 还有 ``babel`` ``js`` 语法
 
+<!-- more -->
+
 postcss.config.js 启动补全前缀
 
-```
+``` javascript
 module.exports = {
   plugins: [
     require('autoprefixer')
@@ -28,7 +32,7 @@ module.exports = {
 ```
 webpack.config.js (``babel`` 语法，``css``，``less``文件解析补全,合并到一个‘``style.css``’)
 
-```
+``` javascript
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
@@ -76,7 +80,7 @@ module.exports = {
 
   index.js (写入，导入命令)
 
-```
+``` javascript
 
 import "../css/H5.css";
 import "../css/test.less";

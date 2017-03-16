@@ -1,7 +1,8 @@
 ---
 title: Typescript类-转换学习
 date: 2017-02-08 08:24:06
-tags:
+tags: [typescript , javascript]
+thumbnail: /2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png
 ---
 
 #TypeScript
@@ -10,9 +11,12 @@ typescript作为微软实现的``js``的超集.
 
 在类的实现，有如传统语言一样简单，
 
+<!-- more -->
+
+
 例子：[官方](#http://www.typescriptlang.org/play/index.html)
 
-``` 
+``` TypeScript
 //.ts
 class Greeter {
     greeting: string;
@@ -23,9 +27,10 @@ class Greeter {
         return "Hello, " + this.greeting;
     }
 }
-```
 
 ```
+
+``` javascript
 //.js
 var Greeter = (function () {
     function Greeter(message) {
@@ -36,14 +41,16 @@ var Greeter = (function () {
     };
     return Greeter;
 }());
+
 ```
 
 说道理，``ts``文件最终还是要变成``js``文件，所以，在我看来，
-这似乎是，学习如何写，``js``*类*的方法。
+这似乎是，学习如何写，``js`` *类* 的方法。
 
 > 上面是一个类，的，写法
 
-```
+``` typescript
+
 //.ts
 class Animal {
     constructor(public name: string) { }
@@ -53,7 +60,8 @@ class Animal {
     }
 }
 ```
-```
+
+``` javascript
 //.js
 var Animal = (function () {
     function Animal(name) {
@@ -66,11 +74,12 @@ var Animal = (function () {
     };
     return Animal;
 }());
+
 ```
 
 > 上面也是一个类，的，写法
 
-```
+``` typescript
 //.ts
 class Animal {
     constructor(public name: string) { }
@@ -87,7 +96,8 @@ class Snake extends Animal {
     }
 }
 ```
-```
+
+``` javascript
 //.js
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -117,6 +127,7 @@ var Snake = (function (_super) {
     };
     return Snake;
 }(Animal));
+
 ```
 
 > 在继承性，问题上，通过``__extends``函数，实现属性复制和 原型链的拼接。

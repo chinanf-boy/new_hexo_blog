@@ -1,16 +1,17 @@
 ---
 title: 浏览器与node，this，的不同
 date: 2017-01-31 15:31:15
-tags: node, 函数
+tags: [node, 函数]
+thumbnail: /2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png
 ---
 
 ## 区别
 
-# 浏览器 
+# 浏览器
 
 >- Chrome + Firefox
 
-```
+``` javascript
 function local() {
 	this.a = 7;
 	var a = 2;
@@ -23,6 +24,7 @@ console.log(a);
 local1 == this ? console.log(a) : console.log(0);
 
 ```
+
 
 输出结果：
 
@@ -42,7 +44,7 @@ v6.9.2
 
 > 对于同样的代码
 
-```
+``` javascript
 function local() {
 	this.a = 7;
 	var a = 2;
@@ -71,8 +73,7 @@ local1 == this ? console.log(a) : console.log(0);
 
 - 其实是因为
 
-```
+``` javascript
 console.log(this);//{}
 console.log(global);//才是全局变量。在node中！
 ```
-

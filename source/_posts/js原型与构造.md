@@ -1,7 +1,9 @@
 ---
 title: js原型与构造
 date: 2017-01-31 20:01:12
-tags:
+tags: javascript
+banner: /2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png
+thumbnail: /2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png
 ---
 
 #对象／构造／原型
@@ -10,7 +12,7 @@ tags:
 
 all 浏览器 获取原型方法
 
-```
+``` javascript
 var a = {};
 //a.prototype 无法获取——原型
 
@@ -21,7 +23,7 @@ a.constructor// function Object() { [native code] }
 
 - 函数 -- 构造 + 原型
 
-```
+``` javascript
 var a = function(){};
 	//函数可以直接  prototype
 a.prototype// Object {};
@@ -33,7 +35,7 @@ a.constructor// function Function() { [native code] }
 
 - 对象 > 构造函数 > 函数 。。
 
-```
+``` javascript
 var b = {};
 b// Object {}
 b.constructor// function Object() { [native code] }
@@ -46,7 +48,7 @@ b.constructor.constructor.constructor// function Function() { [native code] }
 
 - 函数 > 原型 > 函数
 
-```
+``` javascript
 var a = function(){};
 //undefined
 a.__proto__
@@ -61,4 +63,3 @@ a.prototype
 > 函数 **a** 的 原型，是，对象函数``Object``！！
 
 >所以说，a函数的原型是对象，由函数构造。！！
-
