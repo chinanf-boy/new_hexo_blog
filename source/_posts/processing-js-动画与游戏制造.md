@@ -1,9 +1,9 @@
 ---
 title: processing js 动画与游戏制造
-thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
+thumbnail: http://processingjs.org/images/header.png
 date: 2017-05-17 11:37:25
 tags: [ js, 动画, processing ]
-banner: 
+banner: http://processingjs.org/images/header.png
 ---
 
 # processing 动画转换
