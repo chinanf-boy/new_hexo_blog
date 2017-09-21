@@ -19,7 +19,7 @@ banner:
 
 context 实现了，一个全局变量
 
-``` js
+``` py
 const PropTypes = require('prop-types');
 
 class Button extends React.Component {
