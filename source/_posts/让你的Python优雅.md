@@ -110,21 +110,21 @@ for i in range(n):
 for name, color in zip(names, colors):
     print name, '--->', color
 ```
+
 更好的方法
 
-```  py
-
+``` py 
 for name, color in izip(names, colors):
     print name, '--->', color
+```
 
-``` 
 zip在内存中生成一个新的列表，需要更多的内存。izip比zip效率更高。
 
 注意：在Python 3中，izip改名为zip，并替换了原来的zip成为内置函数。
 
 有序地遍历
 
-``` py 
+``` py
 colors = ['red', 'green', 'blue', 'yellow']
 
 # 正序
@@ -135,7 +135,7 @@ for color in sorted(colors):
 for color in sorted(colors, reverse=True):
     print colors
 
-``` 
+```
 自定义排序顺序
 
 ``` py 
@@ -148,13 +148,13 @@ def compare_length(c1, c2):
 
 print sorted(colors, cmp=compare_length)
 
-``` 
+```
 更好的方法
 
 ``` py
 print sorted(colors, key=len)
 
-``` 
+```
 第一种方法效率低而且写起来很不爽。另外，Python 3已经不支持比较函数了。
 
 调用一个函数直到遇到标记值
@@ -167,7 +167,7 @@ while True:
         break
     blocks.append(block)
 
-``` 
+```
 更好的方法 
 
 ``` py
@@ -176,14 +176,14 @@ blocks = []
 for block in iter(partial(f.read, 32), ''):
     blocks.append(block)
 
-``` 
+```
 iter接受两个参数。第一个是你反复调用的函数，第二个是标记值。
 
 译注：这个例子里不太能看出来方法二的优势，甚至觉得partial让代码可读性更差了。方法二的优势在于iter的返回值是个迭代器，迭代器能用在各种地方，set，s
 ``` py 
 orted，min，max，heapq，sum……
 
-``` 
+```
 在循环内识别多个退出点
 
 ``` py 
@@ -197,7 +197,7 @@ def find(seq, target):
         return -1
     return i
 
-```  
+```
 更好的方法
 ``` py
 
@@ -209,7 +209,7 @@ def find(seq, target):
         return -1
     return i
 
-``` 
+```
 for执行完所有的循环后就会执行else。
 
 译注：刚了解for-else语法时会困惑，什么情况下会执行到else里。有两种方法去理解else。传统的方法是把for看作if，当for后面的条件为False时
@@ -228,7 +228,7 @@ for k in d.keys():
     if k.startswith('r'):
         del d[k]
 
-``` 
+```
 什么时候应该使用第二种而不是第一种方法？当你需要修改字典的时候。
 
 如果你在迭代一个东西的时候修改它，那就是在冒天下之大不韪，接下来发生什么都活该。
@@ -249,14 +249,14 @@ for k in d:
 for k, v in d.items():
     print k, '--->', v
 
-```  
+```
 更好的方法
 ``` py
 
 for k, v in d.iteritems():
     print k, '--->', v
 
-``` 
+```
 iteritems()更好是因为它返回了一个迭代器。
 
 注意：Python 3已经没有iteritems()了，items()的行为和iteritems()很接近。详情请看文档。
@@ -272,7 +272,7 @@ d = dict(izip(names, colors))
 
 Python 3: d = dict(zip(names, colors))
 
-``` 
+```
 用字典计数
 
 ``` py 
@@ -287,7 +287,7 @@ for color in colors:
 
 # {'blue': 1, 'green': 2, 'red': 3}
 
-```  
+```
 更好的方法 
 ``` py
 
@@ -300,7 +300,7 @@ d = defaultdict(int)
 for color in colors:
     d[color] += 1
 
-``` 
+```
 用字典分组 — 第I部分和第II部分
 
 ``` py 
@@ -323,7 +323,7 @@ for name in names:
     key = len(name)
     d.setdefault(key, []).append(name)
 
-``` 
+```
 更好的方法
 ``` py
 
@@ -332,7 +332,7 @@ for name in names:
     key = len(name)
     d[key].append(name)
 
-``` 
+```
 字典的popitem()是原子的吗？
 
 ``` py 
@@ -342,7 +342,7 @@ while d:
     key, value = d.popitem()
     print key, '-->', value
 
-``` 
+```
 popitem是原子的，所以多线程的时候没必要用锁包着它。
 
 连接字典
@@ -361,13 +361,13 @@ d = defaults.copy()
 d.update(os.environ)
 d.update(command_line_args)
 
-```  
+```
 更好的方法 
 ``` py
 
 d = ChainMap(command_line_args, os.environ, defaults)
 
-``` 
+```
 ChainMap在Python 3中加入。高效而优雅。
 
 提高可读性
@@ -382,13 +382,13 @@ ChainMap在Python 3中加入。高效而优雅。
 ``` py 
 twitter_search('@obama', False, 20, True)
 
-```  
+```
 更好的方法 
 ``` py
 
 twitter_search('@obama', retweets=False, numtweets=20, popular=True)
 
-``` 
+```
 第二种方法稍微(微秒级)慢一点，但为了代码的可读性和开发时间，值得。
 
 用namedtuple提高多个返回值的可读性
@@ -405,7 +405,7 @@ doctest.testmod()
 doctest.testmod()
 # TestResults(failed=0, attempted=4)
 
-``` 
+```
 namedtuple是tuple的子类，所以仍适用正常的元组操作，但它更友好。
 
 创建一个nametuple
@@ -413,7 +413,7 @@ namedtuple是tuple的子类，所以仍适用正常的元组操作，但它更�
 ``` py 
 TestResults = namedTuple('TestResults', ['failed', 'attempted'])
 
-``` 
+```
 unpack序列
 
 ``` py 
@@ -425,13 +425,13 @@ lname = p[1]
 age = p[2]
 email = p[3]
 
-```  
+```
 更好的方法 
 ``` py
 
 fname, lname, age, email = p
 
-``` 
+```
 第二种方法用了unpack元组，更快，可读性更好。
 
 更新多个变量的状态
@@ -446,7 +446,7 @@ def fibonacci(n):
         y = x + y
         x = t
 
-```  
+```
 更好的方法 
 ``` py
 
@@ -456,7 +456,7 @@ def fibonacci(n):
         print x
         x, y = y, x + y
 
-``` 
+```
 第一种方法的问题
 
 x和y是状态，状态应该在一次操作中更新，分几行的话状态会互相对不上，这经常是bug的源头。
@@ -477,7 +477,7 @@ y = tmp_y
 dx = tmp_dx
 dy = tmp_dy
 
-```  
+```
 更好的方法 
 ``` py
 
@@ -486,7 +486,7 @@ x, y, dx, dy = (x + dx * t,
                 influence(m, x, y, dx, dy, partial='x'),
                 influence(m, x, y, dx, dy, partial='y'))
 
-``` 
+```
 效率
 
 优化的基本原则
@@ -506,13 +506,13 @@ for name in names[1:]:
     s += ', ' + name
 print s
 
-```  
+```
 更好的方法 
 ``` py
 
 print ', '.join(names)
 
-``` 
+```
 更新序列
 
 ``` py 
@@ -534,7 +534,7 @@ del names[0]
 names.popleft()
 names.appendleft('mark')
 
-``` 
+```
 装饰器和上下文管理
 
 用于把业务和管理的逻辑分开
@@ -553,7 +553,7 @@ def web_lookup(url, saved={}):
     saved[url] = page
     return page
 
-```  
+```
 更好的方法 
 ``` py
 
@@ -561,7 +561,7 @@ def web_lookup(url, saved={}):
 def web_lookup(url):
     return urllib.urlopen(url).read()
 
-``` 
+```
 注意：Python 3.2开始加入了functools.lru_cache解决这个问题。
 
 分离临时上下文
@@ -578,7 +578,7 @@ setcontext(old_context)
 with localcontext(Context(prec=50)):
     print Decimal(355) / Decimal(113)
 
-``` 
+```
 译注：示例代码在使用标准库decimal，这个库已经实现好了localcontext。
 
 如何打开关闭文件
@@ -590,14 +590,14 @@ try:
 finally:
     f.close()
 
-```  
+```
 更好的方法 
 ``` py
 
 with open('data.txt') as f:
     data = f.read()
 
-``` 
+```
 如何使用锁
 
 # 创建锁
@@ -612,7 +612,7 @@ try:
 finally:
     lock.release()
 
-```  
+```
 更好的方法 
 
 ``` py
@@ -622,7 +622,7 @@ with lock:
     print 'Critical section 1'
     print 'Critical section 2'
 
-``` 
+```
 分离出临时的上下文
 
 ``` py 
@@ -636,7 +636,7 @@ except OSError:
 with ignored(OSError):
     os.remove('somefile.tmp')
 
-``` 
+```
 ignored是Python 3.4加入的, 文档。
 
 注意：ignored 实际上在标准库叫suppress(译注：contextlib.supress).
@@ -651,7 +651,7 @@ def ignored(*exceptions):
     except exceptions:
         pass
 
-``` 
+```
 把它放在你的工具目录，你也可以忽略异常
 
 译注：contextmanager在标准库contextlib中，通过装饰生成器函数，省去用__enter__和__exit__写上下文管理器。详情请看文档。
@@ -668,7 +668,7 @@ with open('help.txt', 'w') as f:
     finally:
         sys.stdout = oldstdout
 
-``` 
+```
 更好的写法
 
 ``` py 
@@ -676,7 +676,7 @@ with open('help.txt', 'w') as f:
     with redirect_stdout(f):
         help(pow)
 
-``` 
+```
 redirect_stdout在Python 3.4加入(译注：contextlib.redirect_stdout)， bug反馈。
 
 实现你自己的redirect_stdout上下文管理器。
@@ -691,7 +691,7 @@ def redirect_stdout(fileobj):
     finally:
         sys.stdout = oldstdout
 
-``` 
+```
 简洁的单句表达
 
 两个冲突的原则：
@@ -712,11 +712,11 @@ s = i ** 2
     result.append(s)
 print sum(result)
 
-```  
+```
 更好的方法 
 ``` py
 
 print sum(i**2 for i in xrange(10))
 
-``` 
+```
 第一种方法说的是你在做什么，第二种方法说的是你想要什么。
