@@ -67,8 +67,12 @@ theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
+
+deploy: 
+- type: git
   repo: https://github.com/chinanf-boy/chinanf-boy.github.io
   branch: master
-  message:
+- type: git
+  repo: https://git.coding.net/yobrave/hexo-blog.git
+  branch: master
+
