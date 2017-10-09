@@ -2,7 +2,7 @@
 title: windows7 pylint ASCII 问题解决
 thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
 date: 2017-09-08 22:22:36
-tags: pylint
+tags: [pylint]
 banner:
 ---
 

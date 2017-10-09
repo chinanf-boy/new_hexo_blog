@@ -2,7 +2,7 @@
 title: processing p5 js 动画与游戏制造
 thumbnail: http://processingjs.org/images/header.png
 date: 2017-05-17 11:37:25
-tags: [ js, 动画, processing, p5 ]
+tags: [ javascript, 动画, processing, p5 ]
 banner: http://processingjs.org/images/header.png
 ---
 

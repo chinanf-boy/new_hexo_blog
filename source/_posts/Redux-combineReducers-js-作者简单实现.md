@@ -2,7 +2,7 @@
 title: Redux combineReducers js 作者简单实现
 thumbnail: https://chinanf-boy.github.io/2017/04/24/Redux-%E5%9F%BA%E7%A1%80/CPxwNCzSTOWdD4YprFIX_reduxblog.webp
 date: 2017-06-13 10:39:06
-tags: [Redux, js]
+tags: [Redux, javascript]
 banner: https://chinanf-boy.github.io/2017/04/24/Redux-%E5%9F%BA%E7%A1%80/CPxwNCzSTOWdD4YprFIX_reduxblog.webp
 ---
 
