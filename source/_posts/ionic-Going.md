@@ -1,6 +1,6 @@
 ---
 title: ionic Going
-thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
+thumbnail: /file_imgs/ioniclogo.png
 date: 2017-10-06 19:25:25
 tags: [ionic]
 banner: 
@@ -8,7 +8,7 @@ banner:
 
 # 似流程，不是流程
 
-下载问题可看上一篇文章
+下载问题可看[上一篇](http://llever.com/2017/10/06/ionic-%E9%A1%B9%E7%9B%AE-npm%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/)文章
 
 # ionic 是一套使用 javascript html css 技术构建 手机原生应用的 框架
 

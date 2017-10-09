@@ -1,8 +1,8 @@
 ---
 title: Python核心编程第三版-第二章代码运行 问题解决
-thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
+thumbnail: /file_imgs/pythonlogo.png
 date: 2017-09-08 12:46:40
-tags:
+tags: [python]
 banner:
 ---
 

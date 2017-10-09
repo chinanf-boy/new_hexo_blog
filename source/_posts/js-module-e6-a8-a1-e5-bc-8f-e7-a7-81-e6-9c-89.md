@@ -1,13 +1,8 @@
 ---
 title: Js - Module模式 - 私有-公有-命名空间
-tags:
-  - '#js'
-  - Module模式
-thumbnail: '/2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png'
-id: 347
-categories:
-  - javascript
 date: 2017-02-06 15:42:53
+thumbnail: /file_imgs/javascriptlogo.png
+tags: [javascript]
 banner:
 ---
 

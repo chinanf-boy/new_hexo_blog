@@ -1,6 +1,6 @@
 ---
 title: 中间件js实现
-thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
+thumbnail: /file_imgs/javascriptlogo.png
 date: 2017-06-13 10:03:19
 tags: [中间件, js]
 banner:

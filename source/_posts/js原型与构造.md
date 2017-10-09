@@ -1,9 +1,9 @@
 ---
 title: js原型与构造
 date: 2017-01-31 20:01:12
-tags: javascript
-banner: /2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png
-thumbnail: /2017/01/31/js原型与构造/2015-11-11-ts3_thumbs-447.png
+tags: [javascript]
+thumbnail: /file_imgs/javascriptlogo.png
+banner: 
 ---
 
 #对象／构造／原型
