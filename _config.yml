@@ -65,12 +65,6 @@ pagination_dir: page
 theme: icarus
 
 # disqus proxy
-disqus_proxy:
-  shortname: yobrave
-  host: disqus-china-ever.herokuapp.com/
-  port: 8388
-  admin_avatar: /file_imgs/pipenvlogo.png
-  default_avatar: 
 
 
 # Deployment
