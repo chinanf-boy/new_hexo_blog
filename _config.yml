@@ -65,7 +65,11 @@ pagination_dir: page
 theme: icarus
 
 # disqus proxy
-
+# disqus_proxy:
+#   shortname: yobrave
+#   host: disqus-china-ever.herokuapp.com
+#   admin_avatar: /file_imgs/pipenvlogo.png
+#   default_avatar: /avatars/default-avatar.png
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
