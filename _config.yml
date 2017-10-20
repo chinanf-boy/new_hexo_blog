@@ -71,6 +71,11 @@ theme: icarus
 #   admin_avatar: /file_imgs/pipenvlogo.png
 #   default_avatar: /avatars/default-avatar.png
 
+# sitemap
+sitemap:
+    path: sitemap.xml
+    template: ./sitemap_template.xml
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 
