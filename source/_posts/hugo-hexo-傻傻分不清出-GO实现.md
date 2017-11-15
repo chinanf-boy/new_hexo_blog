@@ -1,6 +1,6 @@
 ---
 title: hugo hexo 傻傻分不清出 GO实现
-thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
+thumbnail: ./file_imgs/hugologo.png
 date: 2017-11-14 15:08:32
 tags: [go, hugo]
 banner:

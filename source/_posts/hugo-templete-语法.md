@@ -1,9 +1,9 @@
 ---
 title: hugo templete 语法
-thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
+thumbnail: ./file_imgs/hugologo.png
 date: 2017-11-14 17:48:57
 tags: [hugo]
-banner:
+banner: 
 ---
 
 ```
