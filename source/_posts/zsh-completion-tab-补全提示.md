@@ -2,7 +2,7 @@
 title: zsh completion tab 补全提示
 thumbnail: 'http://tse2.mm.bing.net/th?id=OIP.HMoLaA0mOSlTzJRGppa0ZQEgEs&pid=15.1'
 date: 2017-11-14 14:17:47
-tags:
+tags: [npm, zsh]
 banner:
 ---
 
