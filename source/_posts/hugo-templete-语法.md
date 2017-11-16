@@ -42,6 +42,31 @@ themes/youthemes/layouts/_default/list.html
 {{ end }}
 ```
 
+> ## 注意⚠️
+
+> themes/youthemes/layouts/_default/single.html
+
+> themes/youthemes/layouts/_default/list.html
+
+对于，Hugo 来说，网站分为 ``index.html`` ``list.html`` ``single.html``
+
+> 根目录文件夹中
+
+在 ``content`` 文件夹下 就是 ``路由``
+
+```
+content
+        about // list.html
+            me.md //single.html
+        projects // list.html
+            project1.md //single.html
+            project2.md //single.html
+        ...
+```
+
+``文件夹``代表 ``列表页`` ,调用 ``list.html``
+
+``文件``代表 ``单页``, 调用 ``single.html``
 
 
 ## 内置变量
