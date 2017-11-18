@@ -59,6 +59,10 @@ hugo new posts/my-first-post.md
 hugo server -D
 ```
 
+>注意⚠️
+
+不过，当网站大了之后，等它重建真的很慢，比如说 官方的网站 改了个字 都好久
+
 [基篇：](https://gohugo.io/getting-started/quick-start/)
 
 - 生成静态
