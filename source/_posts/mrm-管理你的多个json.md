@@ -82,3 +82,4 @@ node_modules/
 .DS_Store%
 ```
 
+更具体，需要参考[项目write-you-own-task](https://github.com/sapegin/mrm#writing-your-own-tasks)
