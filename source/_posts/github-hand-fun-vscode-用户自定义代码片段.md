@@ -8,7 +8,7 @@ banner:
 
 # github 连接动画 小手摆摆
 
-<iframe height='265' scrolling='no' title='githubLink' src='//codepen.io/china-boy/embed/yPQpor/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/china-boy/pen/yPQpor/'>githubLink</a> by braveyo (<a href='https://codepen.io/china-boy'>@china-boy</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='265' scrolling='no' title='githubLink' src='//codepen.io/china-boy/embed/yPQpor/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/china-boy/pen/yPQpor/'>githubLink</a> by braveyo (<a href='https://codepen.io/china-boy'>@china-boy</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 # vscode 用户自定义代码片段
@@ -19,7 +19,7 @@ banner:
 
 有个模版，你可以自己看看，或者 复制
 
-``` json
+``` js
 "Print github link": {
 	"prefix": "ghand",
 	"body": [
