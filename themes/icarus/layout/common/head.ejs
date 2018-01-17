@@ -20,7 +20,58 @@
     }
     %>
     <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
-    <style>svg{fill:#f4ff74;color:#151513;position:absolute;border:0;right:0}foreignObject,image,marker,pattern,svg:not(:root),symbol{overflow:hidden}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}.github-corner .octo-arm{-webkit-transform-origin:130px 106px;transform-origin:130px 106px}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}</style>
+    <style>
+        svg {
+  fill: #f4ff74;
+  color: #151513;
+  position: absolute;
+  border: 0;
+  right: 0;
+}
+foreignObject,
+image,
+marker,
+pattern,
+svg:not(:root),
+symbol {
+  overflow: hidden;
+}
+  .github-corner {
+    display: inline;
+  }
+@media (max-width: 1200px) {
+  .github-corner {
+    display: none;
+  }
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+.github-corner .octo-arm {
+  -webkit-transform-origin: 130px 106px;
+  transform-origin: 130px 106px;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+</style>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <%- open_graph({
         image:          thumbnail(page),
