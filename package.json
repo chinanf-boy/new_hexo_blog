@@ -2,6 +2,9 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "cpBook": "cpr ../vue-getNoAbsBooks/vue-getNoAbsBooks/dist/ ./source/getNoAbsBooks/"
+  },
   "hexo": {
     "version": "3.3.6"
   },
