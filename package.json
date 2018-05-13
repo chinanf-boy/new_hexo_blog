@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "cpBook": "rimraf ./source/getNoAbsBooks/* && cpr ../vue-getNoAbsBooks/vue-getNoAbsBooks/dist/ ./source/getNoAbsBooks/"
+    "cpBook": "rimraf ./source/getNoAbsBooks/* && 
+    cpr ../vue-getNoAbsBooks/vue-getNoAbsBooks/dist/ ./source/getNoAbsBooks/ &&
+    replace-in-file '=/' '=/getNoAbsBooks/' ./source/getNoAbsBooks/index.html"
   },
   "hexo": {
     "version": "3.3.7"
@@ -24,6 +26,7 @@
     "hexo-server": "^0.2.0"
   },
   "devDependencies": {
+    "replace-in-file": "^3.4.0",
     "rimraf": "^2.6.2"
   }
 }
