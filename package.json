@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "cpBook": "rimraf ./source/getNoAbsBooks/* && npm run cpr:book && npm run replace:book",
-    "cpr:book": "cpr ../vue-getNoAbsBooks/vue-getNoAbsBooks/dist/ ./source/getNoAbsBooks/",
-    "replace:book":"replace-in-file '/=\//g' '=/getNoAbsBooks/' ./source/getNoAbsBooks/index.html --isRegex"
+    "cpr:book": "cpr ../vue-getNoAbsBooks/dist/ ./source/getNoAbsBooks/",
+    "replace:book": "replace-in-file '/=//g' '=/getNoAbsBooks/' ./source/getNoAbsBooks/index.html --isRegex"
   },
   "hexo": {
     "version": "3.3.7"
