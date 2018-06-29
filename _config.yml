@@ -27,6 +27,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render: [getNoAbsBooks/*, getNoAbsBooks/**/*,liaoAliao/*, liaoAliao/**/*,
 gentle-intro/*, gentle-intro/**/*,gentle-intro/_*,
+react-from-zero/*, react-from-zero/**/*,react-from-zero/_*,
 google52ce71740cf638d1.html, jupyter_notebook/*,
 jupyter_notebook/**/*, example/*, example/**/*, about/*, about/**/*, 'README.md']
 # Writing
