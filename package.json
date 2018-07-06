@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "cpr": "npm run cpr:gentle-intro && npm run cpr:rustwasm-book",
     "cpBook": "rimraf ./source/getNoAbsBooks/* && npm run cpr:book && npm run replace:book",
     "cpr:book": "cpr ../vue-getNoAbsBooks/dist/ ./source/getNoAbsBooks/",
     "replace:book": "replace-in-file '/=//g' '=/getNoAbsBooks/' ./source/getNoAbsBooks/index.html --isRegex",
-    "cpr:gentle-intro": "cpr ./source/gentle-intro/_FontAwesome/ ./public/gentle-intro/_FontAwesome/"
+    "cpr:gentle-intro": "cpr ./source/gentle-intro/_FontAwesome/ ./public/gentle-intro/_FontAwesome/",
+    "cpr:rustwasm-book": "cpr ./source/rustwasm-book/_FontAwesome/ ./public/rustwasm-book/_FontAwesome/"
+
   },
   "hexo": {
     "version": "3.3.7"
